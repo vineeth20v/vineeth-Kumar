@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineeth Kumar's Resume</title>
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color:white; /* Set the background color */
+            color: #fff; /* Set text color to white */
+            display: flex;
+            animation: fadeIn 1s ease-in-out;
+            font-weight: 300;
+        }
+ 
+
+        #left-panel {
+            width: 24%;
+            padding-right: 10px;
+            border-right: 2px solid #02ccfe;
+            text-align: center; /* Center the text in the left panel */
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally in the left panel */
+            background-color: #444; /* Set left panel background color */
+    color: #fff;
+        }
+
+        #content {
+            width: 76%;
+            padding: 20px;
+        }
+
+        /* Header section containing name and objective */
+        .header {
+            text-align: center;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #02ccfe; /* Text color */
+        }
+
+        .objective {
+            margin-top: 10px;
+            font-style: italic;
+            color: #fff; /* Text color */
+            
+            font-family: Arial, sans-serif;
+font-weight: normal;
+
+        }
+
+        /* Section for contact details and languages known */
+        .details-languages-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; /* Adjust spacing */
+        }
+
+        .details, .languages {
+            width: 48%; /* Adjust width */
+        }
+
+        /* Styling for individual sections like Technical Summary, Strengths etc. */
+        .section {
+            margin-top: 20px;
+            background-color: #d8f3dc; /* Set background color for individual sections */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #02ccfe; /* Section title color */
+        }
+
+        .section-content {
+            color: #333; /* Text color */
+            font-weight: bold;
+        }
+
+
+        /* Add a green box on the left side of the container using the :before pseudo-element */
+    
+
+        /* Additional styles for the photo */
+        #photo {
+            border: 4px solid #fff; /* White border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            width: 150px;
+            height: 150px;
+            background-image: url('your_photo.jpg'); /* Replace 'your_photo.jpg' with the actual path to your photo */
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Styles for links */
+        a {
+            color: #02ccfe; /* Link color */
+            text-decoration: none;
+            border-bottom: 1px solid #02ccfe; /* Underline effect on hover */
+            transition: border-bottom 0.3s ease-in-out;
+        }
+
+        a:hover {
+            border-bottom: 2px solid #02ccfe; /* Increase underline thickness on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .details, .languages {
+                width: 100%; /* Adjust width for smaller screens */
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Container holding the resume content */ */
+/* Container holding the resume content */
+/* .resume-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff; 
+    border-left: 10px solid #02ccfe;
+  }  */
+  #content:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            background: #02ccfe;
+        }
+
+.header {
+    text-align: center;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.objective {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Section for contact details and languages known */
+.details-languages-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.details,
+.languages {
+    width: 48%;
+}
+
+/* Styling for individual sections like Technical Summary, Strengths etc. */
+.section {
+    margin-top: 20px;
+    background-color: #d8f3dc; /* Set background color for individual sections */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #02ccfe;
+}
+
+.section-content {
+    color: #333;
+}
+
+
+.resume-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: #02ccfe;
+
+}
+/* Additional styles for the photo */
+#photo {
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* Styles for links */
+a {
+    color: #02ccfe;
+    text-decoration: none;
+    border-bottom: 1px solid #02ccfe;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+a:hover {
+    border-bottom: 2px solid #02ccfe;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .details,
+    .languages {
+        width: 100%;
+    }
+}
+
+#photo {
+    width: 150px;
+    height: 150px;
+    background-image: url('naruto.jpg'); /* Replace 'your_photo.jpg' with the actual path to your photo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px; /* Adjust margin-top as needed */
+    align-self: center; /* Center the photo vertically in the left div */
+}
+
+
+        #name {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 2px solid #02ccfe;
+            width: 21cm;
+            height: 29.7cm;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #left-panel {
+    width: 24%;
+    padding-right: 20px;
+    border-right: 2px solid #02ccfe;
+    text-align: center; /* Center the text in the left panel */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in the left panel */
+    background-color: #444;
+}
+
+#left-panel p {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text thicker */
+    color: #fff; /* Set text color to white */
+}
+
+#hobbies {
+    font-size: 24px; /* Adjust the font size of the hobbies section */
+}
+
+#one::before{
+  content:" 🏏";  
+}
+#two::before{
+  content: "🍥";  
+}
+#three::before {
+        content: " 📺 ";
+        margin-right: 50px;
+margin-bottom: 50px;
+        
+    }
+#left-panel ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+#left-panel ul li {
+    font-size: 18px; /* Adjust the font size of list items */
+    color: #fff; /* Set text color to white */
+    font-weight: bold; /* Make the text thicker */
+}
+
+
+        #content {
+            width: 76%;
+        }
+
+        h1, h2, h3 {
+            color: #02ccfe;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            color: black;
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 20px;
+        }
+
+        li {
+            position: relative;
+        }
+
+        li::before {
+            content: "\2022";
+            color: #02ccfe;
+            font-size: 1.2em;
+            position: absolute;
+            left: -20px;
+        }
+
+        .contact-details {
+            text-align: right;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .contact-details:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #02ccfe;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .bold-list li {
+            font-weight: bold;
+        }
+
+        .education-arrow {
+            font-size: 1.2em;
+            color: #02ccfe;
+            margin-right: 5px;
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Add styles for icons */
+        .icon {
+            margin-right: 5px;
+            color: #02ccfe;
+        }
+        #left-panel{
+            color: white;
+            
+        }
+       
+
+
+
+    </style>
+</head>
+<body class="animated">
+
+    <div id="left-panel">
+       <div style="margin-top: 20px;"></div>
+        <div id="photo"></div>
+        <div id="name">Vineeth<br>Kumar</div>
+        <h3 s>Contact Details:</h3>
+        <p style="color:white"><i class="icon fas fa-envelope"></i>Email: vv163002@gmail.com<span></span></p>
+        <p  style="color:white"><i class="icon fas fa-phone"></i>Phone: <span>+91 8217415109</span></p>
+        <h3 >Languages:</h3>
+        <ul  style="color:white">
+            <li style="color:white">Telugu</li>
+            <li  style="color:white" >Hindi</li>
+            <li style="color:white">English</li>
+        </ul>
+        <h3>Hobbies:</h3>
+        <ul id="hobbies" style="color:white">
+            <li id="one" style="color:white">Cricket</li>
+            <li id="two" style="color:white">Anime</li>
+            <li id="three" style="color:white">WebSeries</li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="career-objective" style="font-weight: bold;">
+            <h2 style="font-size: 22px;">Career Objective:</h2>
+            <p style="font-weight: bold; font-size: 16px;">
+                "B.Com final year student eager to start a career as a Customer Care Executive. Dedicated and detail-oriented, seeking an opportunity to provide excellent customer service, resolve issues, and contribute to the success of a customer-focused organization."
+            </p>
+        </div>
+        
+
+        <div id="technical-summary">
+            <h2>Technical Summary:</h2>
+            <ul class="bold-list">
+                <li>• Fluent in English, Hindi, and Telugu, with strong communication skills in all three languages.</li>
+                <li>• Proficient in computer applications, showcasing a solid foundation in computer knowledge.</li>
+                <li>• Well-versed in AI technologies, [mention any specific AI tools, programming languages, or frameworks you are familiar with].</li>
+                <li>• Good typing skills, ensuring efficient and accurate data entry.</li>
+            </ul>
+        </div>
+
+        <div id="strengths" style="font-weight: bold;">
+            <h2 style="font-size: 22px;">Strengths:</h2>
+            <ul class="bold-list">
+                <li>• Communication Skills: Strong written and verbal communication skills.</li>
+                <li>• Teamwork: Ability to collaborate effectively with colleagues.</li>
+                <li>• Time Management: Efficiently prioritize tasks and manage time to meet deadlines.</li>
+                <li>• Positive Attitude: Maintaining a positive and constructive outlook in the workplace.</li>
+            </ul>
+        </div>
+        
+
+        <div id="education">
+            <h2>Education:</h2>
+            <ul class="bold-list">
+                <li>
+                    <p class="bold-list education-title">Bachelor's Degree</p>
+                    <span class="education-arrow">&rarr;</span> B.com(computer applications) - Hindi Mahavidhyalaya college, Vidhyanagar - <span>7.6 CGPA [2021-2024]</span>
+                </li>
+                <li>
+                    <p class="bold-list education-title">Intermediate</p>
+                    <span class="education-arrow">&rarr;</span> CEC - OmegaJR.collage, habsiguda - <span>6.5 CGPA [2019-2021]</span>
+                </li>
+                <li>
+                    <p class="bold-list education-title">SSC</p>
+                    <span class="education-arrow">&rarr;</span> Sri sai vidyaNiketan High School, Mallapur - <span>9.8 CGPA [2018-2019]</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
